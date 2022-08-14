@@ -1,0 +1,165 @@
+
+> apland-app-landing-template@5.1.2 gulp /opt/vibos
+> gulp
+
+[07:40:35] Using gulpfile /opt/vibos/gulpfile.js
+[07:40:35] Starting 'default'...
+[07:40:35] Starting 'js'...
+[07:40:35] Finished 'js' after 57 ms
+[07:40:35] Starting 'css'...
+[07:40:35] Finished 'css' after 15 ms
+[07:40:35] Starting 'cssAutoprefixer'...
+[07:40:36] Finished 'cssAutoprefixer' after 294 ms
+[07:40:36] Starting 'staticCommonFiles'...
+[07:40:36] Finished 'staticCommonFiles' after 8.02 ms
+[07:40:36] Starting 'staticJS'...
+[07:40:36] Finished 'staticJS' after 8.13 ms
+[07:40:36] Starting 'staticCSS'...
+[07:40:36] Finished 'staticCSS' after 6.4 ms
+[07:40:36] Starting 'staticFonts'...
+[07:40:36] Finished 'staticFonts' after 12 ms
+[07:40:36] Starting 'staticImages'...
+[07:40:36] Finished 'staticImages' after 99 ms
+[07:40:36] Starting 'staticPhp'...
+[07:40:36] Finished 'staticPhp' after 3.02 ms
+[07:40:36] Starting 'pugToHtml'...
+[07:40:38] Finished 'pugToHtml' after 2.66 s
+[07:40:38] Starting 'watching'...
+
+> apland-app-landing-template@5.1.2 gulp /opt/vibos
+> gulp "sync"
+
+[08:09:55] Using gulpfile /opt/vibos/gulpfile.js
+[08:09:55] Starting 'sync'...
+[Browsersync] Access URLs:
+ ---------------------------------------
+       Local: http://localhost:3000
+    External: http://128.199.252.59:3000
+ ---------------------------------------
+          UI: http://localhost:3001
+ UI External: http://localhost:3001
+ ---------------------------------------
+[Browsersync] Serving files from: ./dist
+[Browsersync] Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)
+[08:19:27] Starting 'staticImages'...
+[08:19:27] Finished 'staticImages' after 85 ms
+
+> apland-app-landing-template@5.1.2 gulp /opt/vibos
+> gulp "sync"
+
+[12:13:20] Using gulpfile /opt/vibos/gulpfile.js
+[12:13:20] Starting 'sync'...
+[Browsersync] Access URLs:
+ ---------------------------------------
+       Local: http://localhost:3000
+    External: http://128.199.252.59:3000
+ ---------------------------------------
+          UI: http://localhost:3001
+ UI External: http://localhost:3001
+ ---------------------------------------
+[Browsersync] Serving files from: ./dist
+[Browsersync] Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)
+
+> apland-app-landing-template@5.1.2 gulp /opt/vibos
+> gulp "sync"
+
+[02:46:59] Using gulpfile /opt/vibos/gulpfile.js
+[02:46:59] Starting 'sync'...
+[Browsersync] Access URLs:
+ ---------------------------------------
+       Local: http://localhost:3000
+    External: http://128.199.252.59:3000
+ ---------------------------------------
+          UI: http://localhost:3001
+ UI External: http://localhost:3001
+ ---------------------------------------
+[Browsersync] Serving files from: ./dist
+[Browsersync] Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)
+
+> apland-app-landing-template@5.1.2 gulp /opt/vibos
+> gulp "sync"
+
+[15:23:57] Using gulpfile /opt/vibos/gulpfile.js
+[15:23:57] Starting 'sync'...
+[Browsersync] Access URLs:
+ ---------------------------------------
+       Local: http://localhost:3000
+    External: http://128.199.252.59:3000
+ ---------------------------------------
+          UI: http://localhost:3001
+ UI External: http://localhost:3001
+ ---------------------------------------
+[Browsersync] Serving files from: ./dist
+[Browsersync] Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)
+
+> apland-app-landing-template@5.1.2 gulp /opt/vibos
+> gulp "sync"
+
+[02:31:14] Using gulpfile /opt/vibos/gulpfile.js
+[02:31:14] Starting 'sync'...
+[Browsersync] Access URLs:
+ ---------------------------------------
+       Local: http://localhost:3000
+    External: http://128.199.252.59:3000
+ ---------------------------------------
+          UI: http://localhost:3001
+ UI External: http://localhost:3001
+ ---------------------------------------
+[Browsersync] Serving files from: ./dist
+[Browsersync] Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)
+
+> apland-app-landing-template@5.1.2 gulp /opt/vibos
+> gulp "sync"
+
+[06:30:20] Using gulpfile /opt/vibos/gulpfile.js
+[06:30:20] Starting 'sync'...
+[Browsersync] Access URLs:
+ ---------------------------------------
+       Local: http://localhost:3000
+    External: http://128.199.252.59:3000
+ ---------------------------------------
+          UI: http://localhost:3001
+ UI External: http://localhost:3001
+ ---------------------------------------
+[Browsersync] Serving files from: ./dist
+[Browsersync] Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)
+
+> apland-app-landing-template@5.1.2 gulp /opt/vibos
+> gulp "sync"
+
+[04:40:00] Using gulpfile /opt/vibos/gulpfile.js
+[04:40:00] Starting 'sync'...
+[Browsersync] Access URLs:
+ ---------------------------------------
+       Local: http://localhost:3000
+    External: http://128.199.252.59:3000
+ ---------------------------------------
+          UI: http://localhost:3001
+ UI External: http://localhost:3001
+ ---------------------------------------
+[Browsersync] Serving files from: ./dist
+[Browsersync] Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)
+[04:47:50] Using gulpfile /opt/vibos/gulpfile.js
+[04:47:50] Starting 'sync'...
+[Browsersync] Access URLs:
+ ---------------------------------------
+       Local: http://localhost:3002
+    External: http://128.199.252.59:3002
+ ---------------------------------------
+          UI: http://localhost:3003
+ UI External: http://localhost:3003
+ ---------------------------------------
+[Browsersync] Serving files from: ./dist
+[Browsersync] Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)
+[04:59:47] Using gulpfile /opt/vibos/gulpfile.js
+[04:59:47] Starting 'sync'...
+[Browsersync] Access URLs:
+ ---------------------------------------
+       Local: http://localhost:3004
+    External: http://128.199.252.59:3004
+ ---------------------------------------
+          UI: http://localhost:3005
+ UI External: http://localhost:3005
+ ---------------------------------------
+[Browsersync] Serving files from: ./dist
+[Browsersync] Couldn't open browser (if you are using BrowserSync in a headless environment, you might want to set the open option to false)

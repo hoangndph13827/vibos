@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Apland - App Landing Page Template">
+    <meta name="author" content="Designing World">
+    <meta name="theme-color" content="#0d6efd">
+    <!-- Title-->
+    <title>VIBOS - App for your cars</title>
+    <!-- Favicon-->
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Preloader-->
+    <div id="preloader">
+      <div class="apland-load"></div>
+    </div>
+    <!-- Header Area-->
+    <header class="header-area bave-page-header">
+      <div class="container">
+        <div class="classy-nav-container breakpoint-off">
+          <nav class="classy-navbar justify-content-between" id="aplandNav">
+            <!-- Logo--><a class="nav-brand" href="index.html"><img src="img/core-img/logo.png" alt="" style="width:64px;">VIBOS</a>
+            <!-- Navbar Toggler-->
+            <div class="classy-navbar-toggler"><span class="navbarToggler"><span></span><span></span><span></span></span></div>
+            <!-- Menu-->
+            <div class="classy-menu">
+              <!-- Close Button-->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+              <!-- Nav-->
+              <div class="classynav">
+                <ul id="corenav">
+                  <li><a href="features.html">Tính năng</a>
+                  </li>
+                  <li><a href="services.html">Dịch vụ</a></li>
+                  <li><a href="prices.html">Bảng giá</a>
+                  </li>
+                  <li><a href="videos.html">Video</a></li>
+                  <li><a href="blog.html">Blog</a>
+                  </li>
+                  <li><a href="huongdan.html">Hướng dẫn</a>
+                  <ul class="dropdown">
+                      <li><a href="blog-fix.html">Module Lệnh sửa chữa</a></li>
+                      <li><a href="blog-fin.html">Module Kế toán</a></li>
+                      <li><a href="blog-bought.html">Module Mua hàng</a></li>
+                      <li><a href="blog-sale.html">Module Bán hàng</a></li>
+                      <li><a href="blog-store.html">Module Quản lý kho</a></li>
+                      <li><a href="blog-crm.html">Module CRM</a></li>
+                    </ul></li>
+                  <li><a href="#contact">Trợ giúp</a>
+                  <ul class="dropdown">
+                      <li><a href="help.html">Hỏi đáp</a></li>
+                      <li><a href="download.html">Download tài liệu</a></li>
+                    </ul></li>
+                </ul>
+                <!-- Login Button-->
+                <div class="login-btn-area ms-3 ms-lg-5 mt-5 mt-lg-0"><a class="btn btn-primary" href="register.html">Đăng ký</a></div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Night Mode Area-->
+    <div class="night-mode-wrapper position-fixed shadow-lg d-flex align-items-center justify-content-center" data-bs-toggle="tooltip" data-bs-placement="right" title="View dark/default mode">
+      <div class="form-check p-0 m-0">
+        <input class="form-check-input p-0 m-0" id="darkSwitch" type="checkbox" value="">
+        <label class="form-check-label" for="darkSwitch"></label>
+      </div>
+      <div class="night-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+        </svg>
+      </div>
+      <div class="default-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Welcome Area-->
+    <section class="hero-barishal welcome-area bave-area bave-section-intro" id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="bave-widget-ai-se-giup-ban">
+                    <div class="widget-content">
+                        <h3>Quản trị xưởng dịch vụ toàn diện</h3><p>Nhanh hơn - Hiệu quả hơn</p>                        <div class="button">
+						<a href="/register.html" target="">Đăng Ký Ngay</a></div>
+                        <img src="img/bg-img/mobiapp.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="bave-area bave-section-dich-vu">
+         <div class="container">
+            <div class="row">
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                                            <h3 style=" font-size: 35px;
+    font-weight: bold;
+    color: #222222;
+    padding-bottom: 10px;
+    line-height: 45px; ">Quản trị xưởng dịch vụ toàn diện</h3><p>Dựa trên giải pháp hàng đầu thế giới về quản trị doanh nghiệp, VIBOS cung cấp khung nhìn sâu sắc, toàn diện, đa chiều theo thời gian thực giúp các chủ doanh nghiệp kiểm soát chặt chẽ hệ thống, kết nối an toàn mọi lúc mọi nơi trên mọi thiết bị.</p>                                        </div>
+                                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                            <img src="img/demo-img/toan-dien.png">
+                                        </div>
+                             </div>
+<div class="row">
+
+                                        <div class="col-md-5 col-sm-12 col-xs-12">
+                                            <img src="img/demo-img/kho-khan.png">
+                                        </div>
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <h3 style=" font-size: 35px;
+    font-weight: bold;
+    color: #222222;
+    padding-bottom: 10px;
+    line-height: 45px; ">Xưởng dịch vụ của bạn có đang gặp khó khăn?</h3> <p style="font-size: 24px;">Bạn đang phải đối đầu với:</p><div class="row"> <ul class="col-md-5 col-xs-12 col-sm-12"> <li>Doanh thu thấp, chi phí cao</li><li>Quản lý giấy tờ bằng sổ sách</li><li>Khó khăn trong quản lý từ xa</li><li>Không kết nối được các bộ phận</li></ul> 
+                  <ul class="col-md-7 col-xs-12 col-sm-12"> <li>Không có công cụ hỗ trợ quản lý</li><li>Tốn thời gian tra cứu vật tư phụ tùng</li><li>Chăm sóc khách hàng chưa hiệu quả</li><li>Tổ chức kho không hiệu quả, tồn kho lớn</li></ul> </div>                                   
+        </div>
+                                                                                    
+           </div>      
+        </div>
+    </section>
+    <div class="container">
+      <div class="welcome-border"></div>
+    </div>
+    <!-- Core Features Wrapper-->
+    <div class="core-features-wrapper section-padding-130 bave-section-agara-se-giup-ban">
+      <div class="container">
+         <div class="bave-widget-agara-se-giup-ban">
+                    <div class="widget-title">VIBOS sẽ giúp bạn ?</div>
+                    <div class="widget-content">
+                        <ul class="row">
+                                                                                                <li class="col-md-6 col-xs-12 col-sm-4">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="img/demo-img/profits.png">
+                                            </div>
+                                            <div class="content">
+                                                <h4>TĂNG TRƯỞNG DOANH THU</h4><p>Kiểm soát doanh thu chặt chẽ, quản trị thúc đẩy phát triển doanh thu....</p>                                            </div>
+                                        </div>
+                                    </li>
+                                                                    <li class="col-md-6 col-xs-12 col-sm-4">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="img/demo-img/analytics.png">
+                                            </div>
+                                            <div class="content">
+                                                <h4>QUẢN TRỊ HIỆN ĐẠI</h4><p>Công nghệ hiện đại, đón đầu xu thế phát triển giai đoạn bùng nổ 4.0....</p>                                            </div>
+                                        </div>
+                                    </li>
+                                                                    <li class="col-md-6 col-xs-12 col-sm-4">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="img/demo-img/currency.png">
+                                            </div>
+                                            <div class="content">
+                                                <h4>TỐI ƯU CHI PHÍ</h4> <p>Tiết kiệm chi phí tối đa, giảm trừ chi phí phát sinh ....</p>                                            </div>
+                                        </div>
+                                    </li>
+                                                                    <li class="col-md-6 col-xs-12 col-sm-4">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="img/demo-img/presentation.png">
+                                            </div>
+                                            <div class="content">
+                                                <h4>NÂNG CAO TRÌNH ĐỘ</h4><p>Nâng cao năng lực quản lý, phát triển tư duy thúc đẩy doanh nghiệp....</p>                                            </div>
+                                        </div>
+                                    </li>
+                                                                    <li class="col-md-6 col-xs-12 col-sm-4">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="img/demo-img/cskh.png">
+                                            </div>
+                                            <div class="content">
+                                                <h4>CHĂM SÓC KHÁCH HÀNG HIỆU QUẢ</h4><p>Quản trị khách hàng tối ưu, tương tác chăm sóc khách hàng…</p>                                            </div>
+                                        </div>
+                                    </li>
+                                                                    <li class="col-md-6 col-xs-12 col-sm-4">
+                                        <div class="item">
+                                            <div class="icon">
+                                                <img src="img/demo-img/network-1.png">
+                                            </div>
+                                            <div class="content">
+                                                <h4>MỞ RỘNG KẾT NỐI</h4> <p>Mở rộng hợp tác, kết nối phát triển quy mô doanh nghiệp ngày…</p>                                            </div>
+                                        </div>
+                                    </li>
+                                                                                    </ul>
+                    </div>
+                </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="border-top"></div>
+    </div>
+    <!-- Demo Area-->
+    <div class="demo-area section-padding-130">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-8 col-lg-6">
+            <!-- Section Heading-->
+            <div class="section-heading text-center wow fadeInUp">
+              <h6 class="alert alert-success"></h6>
+              <h3>Tính năng nổi bật</h3>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screenshot Slider-->
+      <div class="app-screenshots-area">
+        <div class="container">
+          <div class="app-screenshots owl-carousel">
+            <!-- Single Screenshot-->
+            <div class="single-testimonial-area text-center">
+              <img src="img/screenshot/1.png" alt=""><h5>Chấm công</h5>
+<p>Ghi chép và Xác nhận các bảng chấm công (timesheet) &amp; Có/Vắng một cách dễ dàng. Phân hệ này cung cấp một giao diện cho…</p>
+            </div>
+            <!-- Single Screenshot-->
+            <div class="single-screenshot"><img src="img/screenshot/2.png" alt=""/><h5>Email Marketing</h5><p>Thiết kế, gửi và theo dõi các email của bạn Phần mềm gửi thư của VIBOS cho phép bạn dễ dàng gửi hàng loạt thư…</p></div>
+            <!-- Single Screenshot-->
+            <div class="single-screenshot"><img src="img/screenshot/3.png" alt=""/><h5>Thương mại điện tử</h5><p>Tối ưu hóa doanh số bán hàng với một cửa hàng trực tuyến hiện đại Phần mềm thương mại điện tử VIBOS không giống như…</p></div>
+            <!-- Single Screenshot-->
+            <div class="single-screenshot"><img src="img/screenshot/4.png" alt=""/><h5>Tạo website doanh nghiệp</h5><p>Ứng dụng này mang lại cho bạn một trang web doanh nghiệp tuyệt vời Bạn có thể xây dựng một trang web tuyệt vời và…</p></div>
+            <!-- Single Screenshot-->
+            <div class="single-screenshot"><img src="img/screenshot/5.png" alt=""/><h5>Quản lý nhân lực</h5><p>Quản lý tài sản quan trọng nhất của mỗi gara: con người Tất cả các hoạt động nhân sự của Công ty bạn được quản…</p></div>
+            <!-- Single Screenshot-->
+            <div class="single-screenshot"><img src="img/screenshot/6.png" alt=""/><h5>Quản lý khách hàng – đối tác</h5><p>Theo dõi hoạt động bằng khung nhìn trực quan Theo dõi nguồn gốc cơ hội kinh doanh (opotunities) của bạn với mô hình Kanban chỉ…</p></div>
+            <!-- Single Screenshot-->
+            <div class="single-screenshot"><img src="img/screenshot/7.png" alt=""/><h5>Hệ thống báo cáo</h5><p>Phân hệ quản lý xưởng dịch vụ của VIBOS đáp ứng đầy đủ quy trình quản lý xưởng sửa chữa gara ô tô từ tiếp…</p></div>
+            <!-- Single Screenshot-->
+            <div class="single-screenshot"><img src="img/screenshot/8.png" alt=""/><h5>Quản lý kho</h5><p>Sử dụng hệ thống quản lý hàng tồn kho bằng phương pháp ghi sổ kép mang tính đột phá. Giảm thời gian quản lý của…</p></div>
+          </div>
+        </div>
+      </div>
+    <!-- CTA Area-->
+    <div class="cta-area section-padding-130">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-9">
+            <div class="cta-content wow fadeInUp text-center">
+              <h3 class="mb-5">VIBOS - Liên kết cùng phát triển</h3>
+
+<!-- <h4>Miễn phí dùng thử lên đến 15 ngày.</h4><a class="btn btn-warning wow fadeInUp" href="https://wrapbootstrap.com/theme/apland-app-landing-page-template-WB0F61H5J" target="_blank">Dùng thử</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Area-->
+    <footer class="bottom-sidebar bave-area bave-area-footer">
+      <div class="container">
+	  <div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div id="custom_html-3" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0217207006795!2d105.78450981534726!3d21.03181688599669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4bec520aeb%3A0x1e88484ad9f51496!2zOSBQLiBE4buLY2ggVuG7jW5nIEjhuq11LCBE4buLY2ggVuG7jW5nIEjhuq11LCBD4bqndSBHaeG6pXksIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1651580843851!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div></div>							
+			
+							<ul class="social-links pull-left clearfix">
+		                        <li><a href="#" class="fa fa-facebook"></a></li>
+		                        <li><a href="#" class="fa fa-twitter"></a></li>
+		                        <li><a href="#" class="fa fa-rss"></a></li>
+		                        <li><a href="#" class="fa fa-pinterest"></a></li>
+		                        <li><a href="#" class="fa fa-dribbble"></a></li>
+		                    </ul>
+						</div>
+						<div class="col-md-2 col-sm-6 col-xs-12 col-md-offset-1">
+							<div id="nav_menu-2" class="widget widget_nav_menu"><h3 class="widget-title">VIBOS</h3><div class="menu-agara-container"><ul id="menu-agara" class="menu"><li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="#">Giới thiệu</a></li>
+<li id="menu-item-141" class="menu-item menu-item-type-post_type_archive menu-item-object-agara_featured menu-item-141"><a href="/tinh-nang/">Tính Năng</a></li>
+<li id="menu-item-143" class="menu-item menu-item-type-post_type_archive menu-item-object-agara_video menu-item-143"><a href="/video/">Video</a></li>
+<li id="menu-item-144" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-144"><a href="/category/blog/">Blog</a></li>
+</ul></div></div>						</div>
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<div id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">Hỗ trợ</h3><div class="menu-ho-tro-container"><ul id="menu-ho-tro" class="menu"><li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="#">Trung tâm CSKH</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a href="#">Hướng dẫn</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42"><a href="#">Phản hồi</a></li>
+<li id="menu-item-145" class="menu-item menu-item-type-post_type_archive menu-item-object-agara_faq menu-item-145"><a href="/huong-dan/">Hỏi đáp</a></li>
+<li id="menu-item-44" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44"><a href="#">Kiến thức</a></li>
+<li id="menu-item-2413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2413"><a href="/chinh-sach-bao-mat-thong-tin/">Chính Sách Bảo Mật Thông Tin</a></li>
+<li id="menu-item-2414" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2414"><a href="/chinh-sach-xu-ly-khieu-nai/">Chính sách xử lý khiếu nại</a></li>
+<li id="menu-item-2415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2415"><a href="/chinh-sach-thanh-toan/">Chính sách thanh toán</a></li>
+</ul></div></div>						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div id="custom_html-2" class="widget_text widget widget_custom_html"><h3 class="widget-title">Liên hệ</h3>
+							<div class="textwidget custom-html-widget">
+							<ul class="bave-contact-ul">
+<li>Công ty CP Công nghệ Cosoft Việt Nam</li>
+<li>No.9 Dich Vong Hau, Cau Giay, Ha Noi, Vietnam</li>
+<li><strong>Email:</strong><a href="mailto:sales@cosoft.vn"> sales@cosoft.vn</a></li>
+<li><strong>Phone:</strong> (+84) 325.640.064</li>
+<li><strong>Website:</strong>http://cosoft.vn/</>
+
+</ul>
+</div></div>						</div>
+					</div>
+        </div>
+    </footer>
+    <!-- Footer Bottom-->
+    <div class="footer-bottom-area py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-7">
+            <div class="copywrite-text" style="padding-left: 20px;">
+              <p class="mb-0">2021 &copy; Made with  <i class="lni-heart"></i> by<a class="ms-1" href="#">Cosoft</a></p>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="social-btn-group d-flex align-items-center justify-content-end" style="padding-right: 20px;"><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+</svg></a><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+</svg></a><a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Slack"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
+<path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+</svg></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery(necessary for all JavaScript plugins without bootstrap js)-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/classy-nav.min.js"></script>
+    <script src="js/one-page-nav.js"></script>
+    <script src="js/scrollup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.animatedheadline.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/jarallax-video.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/mail.js"></script>
+    <!-- All plugins activation code-->
+    <script src="js/active.js"></script>
+    <script src="js/dark-mode-switch.js"></script>
+  </body>
+</html>

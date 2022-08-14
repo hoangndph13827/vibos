@@ -1,0 +1,412 @@
+[data-theme="dark"] {
+    #preloader {
+        background-color: $dark-blue;
+    }
+
+    .apland-load {
+        border-color: $primary;
+        border-top-color: rgba(255, 255, 255, 0.1);
+        border-left-color: rgba(255, 255, 255, 0.1);
+        border-right-color: rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+        background-color: $dark-bg;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $white;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    ol,
+    ul {
+
+        li {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    .classy-navbar .classynav ul li .dropdown {
+        border-color: $dark-blue;
+        background-color: $dark-blue;
+
+        a {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    .classy-navbar .classynav ul li .megamenu {
+        border-color: $dark-blue;
+        background-color: $dark-blue;
+    }
+
+    .classy-navbar .classynav ul li .dropdown a:hover,
+    .classy-navbar .classynav ul li .dropdown a:focus {
+        color: $warning;
+    }
+
+    .classy-navbar .classynav ul li .megamenu a {
+        color: rgba(255, 255, 255, 0.7);
+
+        &:hover,
+        &:focus {
+            color: $warning;
+        }
+    }
+
+    .classynav ul li .megamenu .single-mega.cn-col-4 {
+        border-right-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .header-area {
+        &.header-sticky {
+            background-color: $dark-blue;
+        }
+
+        .classy-nav-container a {
+            color: $white;
+
+            &:hover,
+            &:focus {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+
+        .classynav ul li a {
+            color: $white;
+
+            @media #{$breakpoint-md} {
+                color: $heading;
+
+                &:hover,
+                &:focus {
+                    color: $primary;
+                }
+            }
+
+            @media #{$breakpoint-sm} {
+                color: $heading;
+
+                &:hover,
+                &:focus {
+                    color: $primary;
+                }
+            }
+
+            @media #{$breakpoint-xs} {
+                color: $heading;
+
+                &:hover,
+                &:focus {
+                    color: $primary;
+                }
+            }
+        }
+
+        .classynav ul li:hover>a,
+        .classynav ul li.current-page-item>a {
+            color: $warning;
+        }
+
+        .classynav ul li ul li a {
+            color: $heading;
+
+            &:hover,
+            &:focus {
+                color: $primary;
+            }
+        }
+
+        .classynav ul li.has-down>a::after,
+        .classynav ul li.megamenu-item>a::after {
+            color: $white;
+        }
+
+        .login-btn-area .btn {
+            color: $white;
+
+            &:hover,
+            &:focus {
+                color: $white;
+            }
+        }
+
+        .classy-navbar-toggler .navbarToggler span {
+            background-color: $white;
+        }
+    }
+
+    .welcome-border {
+        border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .alert-primary {
+        color: #084298 !important;
+        background-color: #cfe2ff !important;
+        border-color: #b6d4fe !important;
+    }
+
+    .border-top {
+        border-top-color: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .total-subscriber-text strong {
+        color: $warning;
+    }
+
+    .alert-warning {
+        color: #664d03 !important;
+        background-color: #fff3cd !important;
+        border-color: #ffecb5 !important;
+    }
+
+    .single-work-step:hover,
+    .single-work-step.active {
+        background-color: $dark-blue;
+    }
+
+    .alert-info {
+        color: #055160 !important;
+        background-color: #cff4fc !important;
+        border-color: #b6effb !important;
+    }
+
+    .single-testimonial-area {
+        background-color: $dark-bg;
+    }
+
+    .main-features-area::after {
+        background: $dark-bg;
+        opacity: 0.95;
+    }
+
+    .single-benifits .single-benifits-text h5 {
+        color: $white;
+    }
+
+    .price-plan-area {
+        background-color: $dark-blue;
+    }
+
+    .alert-success {
+        color: #0f5132 !important;
+        background-color: #d1e7dd !important;
+        border-color: #badbcc !important;
+    }
+
+    .single-price-plan {
+        background-color: $dark-bg;
+    }
+
+    .single-team-member .member-info {
+        background-color: $dark-blue;
+    }
+
+    .single-team-member .social-info a {
+        color: $white;
+
+        &:hover,
+        &:focus {
+            color: $warning;
+        }
+    }
+
+    .faq-area {
+        background-color: $dark-blue !important;
+    }
+
+    .faq-accordian .card {
+        background-color: $dark-bg;
+    }
+
+    .faq-accordian .card .card-header {
+        background-color: $dark-bg;
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .faq-accordian .card .card-header h6.collapsed {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .single-timeline-area .timeline-date p {
+        color: $white;
+    }
+
+    .single-timeline-area .timeline-date::after {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .single-timeline-area .single-timeline-content {
+        border-color: rgba(255, 255, 255, 0.07);
+    }
+
+    .bg-gray {
+        background-color: $dark-bg;
+    }
+
+    .apland-contact-form {
+        background-color: $dark-blue;
+    }
+
+    .message-now-area .form-control {
+        border-color: rgba(255, 255, 255, 0.15);
+        background-color: transparent;
+        color: $white;
+    }
+
+    .our-partner-area .p-border-bottom {
+        border-bottom-color: rgba(255, 255, 255, 0.07);
+    }
+
+    .video-area .video-top-thumbnail img {
+        opacity: 0.1;
+    }
+
+    .hero-mymensingh.welcome-area .mymen-background-bottom-shape img {
+        opacity: 0.05;
+    }
+
+    .contact-area .contact-from .form-control {
+        border-color: rgba(255, 255, 255, 0.1);
+        background-color: transparent;
+        color: $white;
+    }
+
+    .register-area .register-content-wrapper {
+        background-color: $dark-blue;
+    }
+
+    .register-area .register-content-wrapper p a:hover {
+        color: $warning;
+    }
+
+    .content-wrapper-area {
+        background-color: $dark-bg !important;
+    }
+
+    .content-wrapper-area .main-content #clock div {
+        color: $warning;
+    }
+
+    .register-area .register-content-wrapper .register-form .form-group .form-control {
+        color: $white;
+        background-color: $dark-bg;
+    }
+
+    .content-wrapper-area .main-content form .form-control {
+        color: $white;
+        background-color: transparent;
+    }
+
+    .register-area .register-content-wrapper .register-form .form-group i {
+        color: $warning;
+        border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .register-area .register-content-wrapper .register-form .forgot-password {
+
+        &:focus,
+        &:hover {
+            color: $warning;
+        }
+    }
+
+    .apland-blog-pagination .page-link {
+        color: $white;
+        background-color: transparent;
+    }
+
+    .single-widget-area .widget-form input {
+        border-color: rgba(255, 255, 255, 0.15);
+        background-color: transparent;
+        color: $white;
+    }
+
+    .catagories-list li a {
+        color: rgba(255, 255, 255, 0.7);
+
+        &:hover,
+        &:focus {
+            color: $warning;
+        }
+    }
+
+    .single-recent-post .post-content .post-title,
+    .single-blog-post .post-title {
+        color: $white;
+
+        &:hover,
+        &:focus {
+            color: $warning;
+        }
+    }
+
+    .single-blog-post {
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .apland-blog-pagination .page-item.active .page-link {
+        color: $warning;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .comment-area .comment-content .comment-meta p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .comment-area .comment-content .comment-meta a.like,
+    .comment-area .comment-content .comment-meta a.reply {
+        border-color: rgba(255, 255, 255, 0.1);
+        color: $white;
+    }
+
+    .comment-area {
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .core-features-card {
+        border-color: rgba(255, 255, 255, 0.07);
+
+        .text-dark {
+            color: $white !important;
+        }
+    }
+
+    .demo-card a img {
+        border-color: rgba(255, 255, 255, 0.07);
+    }
+
+    .breakpoint-on .classy-navbar .classy-menu {
+        background-color: $dark-blue !important;
+    }
+
+    .classycloseIcon .cross-wrap span {
+        background: $white;
+    }
+
+    .breakpoint-on .classynav ul li a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-3,
+    .breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-4,
+    .breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-5 {
+        background-color: transparent;
+    }
+
+    .breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-3,
+    .breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-4,
+    .breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-5 {
+        border-bottom-color: rgba(255, 255, 255, 0.07);
+    }
+}

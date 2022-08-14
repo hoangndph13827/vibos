@@ -1,0 +1,62 @@
+/* Preloader CSS */
+
+#preloader {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999999999999;
+    background-color: $white;
+}
+
+.apland-load {
+    animation: apland-load 1500ms linear infinite;
+    background-color: transparent;
+    border-color: $primary;
+    border-top-color: #f8f8f8;
+    border-left-color: #f8f8f8;
+    border-right-color: #f8f8f8;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    height: 50px;
+    left: calc(50% - 25px);
+    position: relative;
+    top: calc(50% - 25px);
+    width: 50px;
+    z-index: 9;
+}
+
+@keyframes apland-load {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#scrollUp {
+    transition-duration: 500ms;
+    background-color: $primary;
+    border-radius: .25rem;
+    bottom: 30px;
+    box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+    color: $white;
+    font-size: 12px;
+    height: 30px;
+    right: 30px;
+    text-align: center;
+    width: 30px;
+
+    i {
+        line-height: 30px;
+    }
+
+    &:hover {
+        background-color: $heading;
+    }
+}

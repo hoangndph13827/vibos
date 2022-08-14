@@ -1,0 +1,445 @@
+doctype html
+html(lang="en")
+
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+        
+        include inc/header.pug
+
+        include inc/dark.pug
+
+        // Welcome Area
+        section.hero-barishal.welcome-area#home
+
+            // Big Circle
+            .big-circle
+
+            // Circle Shape Animation
+            .circle-shape-animation
+                .circle1
+                .circle2
+                .circle3
+                .circle4
+            
+            .container.h-100
+                .row.h-100.justify-content-between.align-items-center
+                    .col-12.col-md-6
+                        .welcome-text-area
+                            h6.mb-3.wow.fadeInUp(data-wow-delay="0.1s")
+                                svg.bi.bi-lightning-fill(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                                    path(d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z")
+                                | New updated version 5.1.2
+                            
+                            h2.wow.fadeInUp(data-wow-delay="0.2s")
+                                | A creative landing page for your creative 
+                                .animated-headline
+                                    .ah-headline
+                                        span.ah-words-wrapper
+                                            b.is-visible websites.
+                                            b apps.
+                                            b startups.
+
+                            h5.wow.fadeInUp(data-wow-delay="0.3s")
+                                | Apland is a completely 
+                                span.text-primary creative, lightweight, clean &amp; super responsive 
+                                |  app landing page. It's built with the latest technology &amp; comes with 
+                                span.text-primary dark mode.
+                            a.btn.btn-warning.mt-30.wow.fadeInUp(href="https://wrapbootstrap.com/theme/apland-app-landing-page-template-WB0F61H5J", data-wow-delay="0.5s", target="_blank") Buy A License
+                                svg.bi.bi-arrow-right.ms-3(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+                                    path(fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z")
+
+                    .col-12.col-sm-9.col-md-5
+                        // Welcome Thumb
+                        .welcome-area-thumb.text-center.wow.fadeInUp(data-wow-delay="0.2s")
+                            img(src="img/bg-img/hero-12.jpg", alt="")
+
+                            .video-area-text
+                                a.video-btn.mt-0(href="https://www.youtube.com/watch?v=YLtFGWVWiGo")
+                                    i.lni-play
+                                    span.video-sonar
+
+                            // Thumb Shape
+                            .thumb-shape1
+                                img(src="img/core-img/line-shape.png", alt="")
+                            .thumb-shape2
+                            .thumb-shape3
+
+        .container
+            .welcome-border
+
+        // Core Features Wrapper
+        .core-features-wrapper.section-padding-130
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-8.col-lg-6
+                        // Section Heading
+                        .section-heading.text-center.wow.fadeInUp(data-wow-delay="0.2s")
+                            h6.alert.alert-success Why buy it?
+                            h3 Key Features
+                            .line
+
+                .row.g-5.justify-content-center
+                    .col-12.col-sm-6.col-lg-4
+                        .core-features-card.shadow-sm.text-center.wow.fadeInUp(data-wow-delay="0.2s")
+                            img.mb-4(src="img/tech-img/bootstrap.png", alt="")
+                            h4.mb-3 Bootstrap 5.0.2
+                            p.mb-0 We've used the latest bootstrap to create fast, responsive sites.
+
+                    .col-12.col-sm-6.col-lg-4
+                        .core-features-card.shadow-sm.text-center.wow.fadeInUp(data-wow-delay="0.3s")
+                            img.mb-4(src="img/tech-img/npm.png", alt="")
+                            h4.mb-3 NPM
+                            p.mb-0 We've used npm for easily manage and update all assets.
+
+                    .col-12.col-sm-6.col-lg-4
+                        .core-features-card.shadow-sm.text-center.wow.fadeInUp(data-wow-delay="0.1s")
+                            img.mb-4(src="img/tech-img/gulp.png", alt="")
+                            h4.mb-3 Gulp 4
+                            p.mb-0 A toolkit to automate &amp; enhance your workflow.
+
+                    .col-12.col-sm-6.col-lg-4
+                        .core-features-card.shadow-sm.text-center.wow.fadeInUp(data-wow-delay="0.2s")
+                            img.mb-4(src="img/tech-img/pug.png", alt="")
+                            h4.mb-3 PUG
+                            p.mb-0 Pug is a JavaScript compiler for creating automatic HTML code.
+
+                    .col-12.col-sm-6.col-lg-4
+                        .core-features-card.shadow-sm.text-center.wow.fadeInUp(data-wow-delay="0.3s")
+                            img.mb-4(src="img/tech-img/dark.png", alt="")
+                            h4.mb-3 Dark mode
+                            p.mb-0 Dark mode now available for better user experience.
+
+                    .col-12.col-sm-6.col-lg-4
+                        .core-features-card.shadow-sm.text-center.wow.fadeInUp(data-wow-delay="0.1s")
+                            img.mb-4(src="img/tech-img/sass.png", alt="")
+                            h4.mb-3 SASS
+                            p.mb-0 Sass is a preprocessor scripting language that is compiled into CSS.
+
+                    .col-12.col-sm-6.col-lg-4
+                        .core-features-card.shadow-sm.text-center.wow.fadeInUp(data-wow-delay="0.2s")
+                            svg.bi.bi-palette.text-primary.mb-4(xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16")
+                                path(d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z")
+                                path(d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z")
+                            h4.mb-3 Modern design
+                            p.mb-0 Designed and built following the latest trends in the user interface.
+
+                    .col-12.col-sm-6.col-lg-4
+                        .core-features-card.shadow-sm.text-center.wow.fadeInUp(data-wow-delay="0.3s")
+                            svg.bi.bi-lightning.text-danger.mb-4(xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16")
+                                path(d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z")
+                            h4.mb-3 Fast loading
+                            p.mb-0 This template loads very faster. Coded in such a way that it loads quickly.
+
+        .container
+            .border-top
+
+        // Demo Area
+        .demo-area.section-padding-130
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-8.col-lg-6
+                        // Section Heading
+                        .section-heading.text-center.wow.fadeInUp
+                            h6.alert.alert-success 31+ Ready Pages
+                            h3 Beautifully Designed 8 Landing Demo
+                            .line
+
+                .row.g-5.justify-content-center
+                    // Single Demo
+                    .col-12.col-md-6
+                        .card.demo-card.text-center.wow.fadeInUp
+                            a(href="apland-barisal.html", target="_blank")
+                                img(src="img/demo-img/barisal.png", alt="")
+                            h5.mb-0 Apland Barisal
+
+                    // Single Demo
+                    .col-12.col-md-6
+                        .card.demo-card.text-center.wow.fadeInUp
+                            a(href="apland-chattagram.html", target="_blank")
+                                img(src="img/demo-img/chattagram.png", alt="")
+                            h5.mb-0 Apland Chattagram
+
+                    // Single Demo
+                    .col-12.col-md-6
+                        .card.demo-card.text-center.wow.fadeInUp
+                            a(href="apland-dhaka.html", target="_blank")
+                                img(src="img/demo-img/dhaka.png", alt="")
+                            h5.mb-0 Apland Dhaka
+
+                    // Single Demo
+                    .col-12.col-md-6
+                        .card.demo-card.text-center.wow.fadeInUp
+                            a(href="apland-khulna.html", target="_blank")
+                                img(src="img/demo-img/khulna.png", alt="")
+                            h5.mb-0 Apland Khulna
+
+                    // Single Demo
+                    .col-12.col-md-6
+                        .card.demo-card.text-center.wow.fadeInUp
+                            a(href="apland-mymensingh.html", target="_blank")
+                                img(src="img/demo-img/mymensigh.png", alt="")
+                            h5.mb-0 Apland Mymensigh
+
+                    // Single Demo
+                    .col-12.col-md-6
+                        .card.demo-card.text-center.wow.fadeInUp
+                            a(href="apland-rajshahi.html", target="_blank")
+                                img(src="img/demo-img/rajshahi.png", alt="")
+                            h5.mb-0 Apland Rajshahi
+
+                    // Single Demo
+                    .col-12.col-md-6
+                        .card.demo-card.text-center.wow.fadeInUp
+                            a(href="apland-rangpur.html", target="_blank")
+                                img(src="img/demo-img/rangpur.png", alt="")
+                            h5.mb-0 Apland Rangpur
+
+                    // Single Demo
+                    .col-12.col-md-6
+                        .card.demo-card.text-center.wow.fadeInUp
+                            a(href="apland-sylhet.html", target="_blank")
+                                img(src="img/demo-img/sylhet.png", alt="")
+                            h5.mb-0 Apland Sylhet
+
+        // Features Area
+        .using-benefits-area.demo-page.section-padding-130.clearfix
+            .container
+                .row
+                    .col-12
+                        // Section Heading
+                        .section-heading.text-center.wow.fadeInUp
+                            h6.alert.alert-warning All Features
+                            h3.text-white Extra Features
+                            .line.me-auto
+
+                .row.g-5.justify-content-center
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-menu-button-wide text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-13z"/>
+                                <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                            h5.mb-0.text-white Premium Navbar
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-phone text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                            h5.mb-0.text-white Super Responsive
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-card-heading text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                                <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1z"/>
+                            </svg>
+                            h5.mb-0.text-white Animated Headline
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-heart text-white mb-3" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg>
+                            h5.mb-0.text-white Line Icons
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-4
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-play-circle text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                            </svg>
+                            h5.mb-0.text-white Magnific Popup
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-4
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-bug text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6a3.989 3.989 0 0 0-1.334-2.982A3.983 3.983 0 0 0 8 2a3.983 3.983 0 0 0-2.667 1.018A3.989 3.989 0 0 0 4 6h8z"/>
+                            </svg>
+                            h5.mb-0.text-white Bug Free Code
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-4
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-columns text-warning mb-3" viewBox="0 0 16 16">
+                                <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2zm8.5 0v8H15V2H8.5zm0 9v3H15v-3H8.5zm-1-9H1v3h6.5V2zM1 14h6.5V6H1v8z"/>
+                            </svg>
+                            h5.mb-0.text-warning 8 Landing Pages
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-braces text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
+                            </svg>
+                            h5.mb-0.text-white jQuery
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-ui-checks text-warning mb-3" viewBox="0 0 16 16">
+                                <path d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zM2 1a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm0 8a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H2zm.854-3.646a.5.5 0 0 1-.708 0l-1-1a.5.5 0 1 1 .708-.708l.646.647 1.646-1.647a.5.5 0 1 1 .708.708l-2 2zm0 8a.5.5 0 0 1-.708 0l-1-1a.5.5 0 0 1 .708-.708l.646.647 1.646-1.647a.5.5 0 0 1 .708.708l-2 2zM7 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                            h5.mb-0.text-warning Ajax Contact Form
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-globe2 text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+                            </svg>
+                            h5.mb-0.text-white Cross Browser Support
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-code text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+                            </svg>
+                            h5.mb-0.text-white 100% Validate Code
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-4
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-layout-sidebar-reverse text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M16 3a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3zm-5-1v12H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h9zm1 0h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-2V2z"/>
+                            </svg>
+                            h5.mb-0.text-white 23+ Inner Pages
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-4
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-layout-text-window-reverse text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"/>
+                                <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z"/>
+                            </svg>
+                            h5.mb-0.text-white Blog Pages
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-4
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-sliders text-white mb-3" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
+                            </svg>
+                            h5.mb-0.text-white Owl Carousel
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-shield-lock text-warning mb-3" viewBox="0 0 16 16">
+                                <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                                <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z"/>
+                            </svg>
+                            h5.mb-0.text-warning Login/Register
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-clock text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                            </svg>
+                            h5.mb-0.text-white Coming Soon
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-fonts text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M12.258 3H3.747l-.082 2.46h.478c.26-1.544.76-1.783 2.694-1.845l.424-.013v7.827c0 .663-.144.82-1.3.923v.52h4.082v-.52c-1.162-.103-1.306-.26-1.306-.923V3.602l.43.013c1.935.062 2.434.301 2.694 1.846h.479L12.258 3z"/>
+                            </svg>
+                            h5.mb-0.text-white Google Fonts
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-calendar2-range text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+                                <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM9 8a1 1 0 0 1 1-1h5v2h-5a1 1 0 0 1-1-1zm-8 2h4a1 1 0 1 1 0 2H1v-2z"/>
+                            </svg>
+                            h5.mb-0.text-white Timeline
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-4
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-sort-numeric-up text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M12.438 1.668V7H11.39V2.684h-.051l-1.211.859v-.969l1.262-.906h1.046z"/>
+                                <path fill-rule="evenodd" d="M11.36 14.098c-1.137 0-1.708-.657-1.762-1.278h1.004c.058.223.343.45.773.45.824 0 1.164-.829 1.133-1.856h-.059c-.148.39-.57.742-1.261.742-.91 0-1.72-.613-1.72-1.758 0-1.148.848-1.835 1.973-1.835 1.09 0 2.063.636 2.063 2.687 0 1.867-.723 2.848-2.145 2.848zm.062-2.735c.504 0 .933-.336.933-.972 0-.633-.398-1.008-.94-1.008-.52 0-.927.375-.927 1 0 .64.418.98.934.98z"/>
+                                <path d="M4.5 13.5a.5.5 0 0 1-1 0V3.707L2.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L4.5 3.707V13.5z"/>
+                            </svg>
+                            h5.mb-0.text-white Countdown
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-4
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-tag text-warning mb-3" viewBox="0 0 16 16">
+                                <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+                                <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586l7 7L13.586 9l-7-7H2v4.586z"/>
+                            </svg>
+                            h5.mb-0.text-warning Price Table
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-4
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-camera-video text-white mb-3" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175l3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+                            </svg>
+                            h5.mb-0.text-white Background Video
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-question-circle text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                            </svg>
+                            h5.mb-0.text-white FAQ
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-geo-alt text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                            h5.mb-0.text-white Google Maps
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-chat-dots text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+                            </svg>
+                            h5.mb-0.text-white Real Support
+
+                    // Core Features
+                    .col-12.col-sm-6.col-lg-3
+                        .single-core-feature.text-center.shadow.wow.fadeInUp
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-geo-alt text-white mb-3" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                            h5.mb-0.text-white Lightweight
+
+        // CTA Area
+        .cta-area.section-padding-130
+            .container
+                .row.justify-content-center
+                    .col-12.col-md-9
+                        .cta-content.wow.fadeInUp.text-center
+                            h3.mb-5 More than 680+ websites have been created by the Apland. You can buy it with confidence.
+                            a.btn.btn-warning.wow.fadeInUp(href="https://wrapbootstrap.com/theme/apland-app-landing-page-template-WB0F61H5J", target="_blank") Purchased Now
+
+        include inc/footer.pug
+
+        include inc/plugins.pug

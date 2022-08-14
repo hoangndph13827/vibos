@@ -1,0 +1,72 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-white.pug
+
+        include inc/dark.pug
+
+        // Breadcrumb Area
+        .breadcrumb-area.bg-img.bg-black-overlay.section-padding-130(style="background-image: url(img/bg-img/testimonials.jpg);")
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-9.col-xl-6
+                        .breadcrumb-content.text-center
+                            h2 Let's talk about everyting
+                            p For 5 years we have been developing for providing better services.
+                            // Breadcrumb
+                            nav.mt-4(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="#") Home
+                                    li.breadcrumb-item.active(aria-current="page") Contact
+
+        // Message Now Area
+        section.contact-area.section-padding-130
+            .container
+                .row.g-5
+                    .col-12.col-md-6
+                        .section-heading
+                            h6.alert.alert-primary Contact Us
+                            h3 We'd love to hear from you
+                            p Apland is a completely creative, lightweight, clean &amp; super responsive app landing page.
+                            .line.ms-0
+
+                    .col-12.col-md-6
+                        .contact-from
+                            form(action="php/mail.php", method="post", id="main-contact-form")
+                                .contact-input-area
+                                    #success-fail-info
+                                    .row
+                                        .col-12
+                                            .form-group
+                                                input.form-control(type="text", name="name", id="name", placeholder="Your Name", required)
+
+                                        .col-12
+                                            .form-group
+                                                input.form-control(type="email", name="email", id="email", placeholder="Your E-mail", required)
+
+                                        .col-12
+                                            .form-group
+                                                input.form-control(type="text", name="subject", id="subject", placeholder="Your Subject", required)
+
+                                        .col-12
+                                            .form-group
+                                                input.form-control(type="text", name="number", id="number", placeholder="Your Number *", required)
+
+                                        .col-12
+                                            .form-group
+                                                textarea.form-control(name="message", id="message", cols="30", rows="10", placeholder="Your Message *", required)
+
+                                        .col-12
+                                            button.btn.btn-primary(type="submit") SEND MESSAGE
+
+        include inc/cta.pug
+
+        include inc/footer.pug
+
+        include inc/plugins.pug

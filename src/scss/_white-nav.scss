@@ -1,0 +1,81 @@
+/* White Nav CSS */
+
+.header-area {
+    &.white-nav {
+        &.header-sticky {
+            background-color: $dark-blue;
+        }
+
+        .classy-nav-container a {
+            color: $white;
+
+            &:hover,
+            &:focus {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+
+        .classynav ul li a {
+            color: $white;
+
+            @media #{$breakpoint-md} {
+                color: $heading;
+
+                &:hover,
+                &:focus {
+                    color: $primary;
+                }
+            }
+
+            @media #{$breakpoint-sm} {
+                color: $heading;
+
+                &:hover,
+                &:focus {
+                    color: $primary;
+                }
+            }
+
+            @media #{$breakpoint-xs} {
+                color: $heading;
+
+                &:hover,
+                &:focus {
+                    color: $primary;
+                }
+            }
+        }
+
+        .classynav ul li:hover>a,
+        .classynav ul li.current-page-item>a {
+            color: $warning;
+        }
+
+        .classynav ul li ul li a {
+            color: $heading;
+
+            &:hover,
+            &:focus {
+                color: $primary;
+            }
+        }
+
+        .classynav ul li.has-down>a::after,
+        .classynav ul li.megamenu-item>a::after {
+            color: $white;
+        }
+
+        .login-btn-area .btn {
+            color: $white;
+
+            &:hover,
+            &:focus {
+                color: $white;
+            }
+        }
+
+        .classy-navbar-toggler .navbarToggler span {
+            background-color: $white;
+        }
+    }
+}

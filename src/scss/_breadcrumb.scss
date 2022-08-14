@@ -1,0 +1,71 @@
+/* Breadcrumb CSS */
+
+.breadcrumb-area {
+    position: relative;
+    z-index: 1;
+
+    .breadcrumb-content {
+        padding-top: 100px;
+        padding-bottom: 30px;
+
+        @media #{$breakpoint-md} {
+            padding-top: 60px;
+            padding-bottom: 0;
+        }
+
+        @media #{$breakpoint-sm} {
+            padding-top: 50px;
+            padding-bottom: 0;
+        }
+
+        @media #{$breakpoint-xs} {
+            padding-top: 50px;
+            padding-bottom: 0;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            color: $white;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            letter-spacing: -1px;
+
+            @media #{$breakpoint-lg} {
+                font-size: 3rem;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 2.75rem;
+            }
+
+            @media #{$breakpoint-sm} {
+                font-size: 2.25rem;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.65);
+            margin-bottom: 0;
+        }
+
+        .breadcrumb-item {
+            a {
+                color: $white;
+                font-weight: 500;
+            }
+
+            &.active {
+                color: $warning;
+                font-weight: 500;
+            }
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            color: $white;
+        }
+    }
+}

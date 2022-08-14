@@ -1,0 +1,112 @@
+/* Testimonial CSS */
+
+.testimonial-area {
+    position: relative;
+    z-index: 1;
+    background-color: $dark-blue;
+    overflow: hidden;
+
+    .testimonial-top-thumbnail img {
+        position: absolute;
+        width: auto;
+        top: -1px;
+        right: -1px;
+        z-index: -1;
+    }
+
+    .testimonial-bottom-thumbnail img {
+        position: absolute;
+        width: auto;
+        bottom: -1px;
+        left: -1px;
+        z-index: -1;
+    }
+
+    .owl-dots {
+        position: relative;
+        z-index: 1;
+        margin-top: 5rem;
+        line-height: 1;
+        text-align: center;
+
+        .owl-dot {
+            background-color: $white;
+            border-radius: 20px;
+            display: inline-block;
+            height: 3px;
+            margin: 0 5px;
+            width: 1.75rem;
+
+            &.active {
+                background-color: $warning;
+            }
+
+            @media #{$breakpoint-xs} {
+                width: 0.75rem;
+            }
+
+            @media #{$breakpoint-sm} {
+                width: 1rem;
+            }
+        }
+    }
+}
+
+.single-testimonial-area {
+    position: relative;
+    z-index: 1;
+    background-color: $white;
+    border-radius: .25rem;
+    padding: 3rem;
+
+    @media #{$breakpoint-md} {
+        padding: 1.5rem;
+    }
+
+    @media #{$breakpoint-sm} {
+        padding: 2rem;
+    }
+
+    .testimonial-author-name {
+        h5 {
+            font-size: 1rem;
+        }
+
+        h6 {
+            margin-bottom: 0;
+            font-size: 14px;
+            color: $text;
+            font-weight: 400;
+        }
+    }
+
+    .testimonial-author-thumb {
+        border-radius: 50%;
+        height: 50px;
+        margin: 0 auto 1rem;
+        width: 50px;
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .testimonial-text {
+        p {
+            margin-bottom: 3rem;
+        }
+
+        .rating {
+            margin-bottom: .5rem;
+            line-height: 1;
+
+            i {
+                font-size: 14px;
+                margin: 0 2px;
+                color: $warning;
+            }
+        }
+    }
+}

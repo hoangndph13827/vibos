@@ -1,0 +1,263 @@
+/* Header CSS */
+
+.header-area {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999 !important;
+    background-color: transparent;
+    transition-duration: 250ms;
+}
+
+.classy-nav-container {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+
+    a:hover,
+    a:focus {
+        color: $primary;
+    }
+
+    .classy-navbar {
+        transition-duration: 500ms;
+        height: 90px;
+
+        @media #{$breakpoint-md} {
+            height: 80px;
+        }
+
+        @media #{$breakpoint-sm} {
+            height: 60px;
+        }
+
+        @media #{$breakpoint-xs} {
+            height: 60px;
+        }
+
+        .classynav>ul>li>a {
+            font-weight: 500;
+        }
+
+        .classynav>ul>li>ul>li>a {
+            font-weight: 400;
+        }
+
+        .classynav ul li {
+            a {
+                color: $heading;
+                padding: 32px 15px;
+                height: auto;
+                line-height: 1;
+                font-size: 15px;
+                text-transform: capitalize;
+
+                @media #{$breakpoint-md} {
+                    padding: 12px 16px;
+                }
+
+                @media #{$breakpoint-sm} {
+                    padding: 12px 16px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    padding: 12px 16px;
+                }
+            }
+
+            .megamenu {
+                border: 1px solid rgba(0, 0, 0, .05);
+                box-shadow: 0 1rem 3rem rgba(47, 91, 234, 0.175);
+                border-radius: 6px;
+
+                @media #{$breakpoint-md} {
+                    box-shadow: none;
+                    background-color: $white;
+                    border-radius: 0;
+                    border: 0;
+                }
+
+                @media #{$breakpoint-sm} {
+                    box-shadow: none;
+                    background-color: $white;
+                    border-radius: 0;
+                    border: 0;
+                }
+
+                @media #{$breakpoint-xs} {
+                    box-shadow: none;
+                    background-color: $white;
+                    border-radius: 0;
+                    border: 0;
+                }
+
+                a {
+                    padding: 15px;
+                    text-transform: capitalize;
+                    color: $text;
+
+                    &:hover,
+                    &:focus {
+                        color: $primary;
+                    }
+                }
+            }
+
+            .dropdown {
+                width: 260px;
+                border: 1px solid rgba(0, 0, 0, .05);
+                box-shadow: 0 1rem 3rem rgba(47, 91, 234, 0.175);
+                border-radius: 6px;
+                padding-top: 18px;
+                padding-bottom: 18px;
+
+                @media #{$breakpoint-md} {
+                    width: 100%;
+                    box-shadow: none;
+                    background-color: $white;
+                    border-radius: 0;
+                    border: 0;
+                }
+
+                @media #{$breakpoint-sm} {
+                    width: 100%;
+                    box-shadow: none;
+                    background-color: $white;
+                    border-radius: 0;
+                    border: 0;
+                }
+
+                @media #{$breakpoint-xs} {
+                    width: 100%;
+                    box-shadow: none;
+                    background-color: $white;
+                    border-radius: 0;
+                    border: 0;
+                }
+
+                a {
+                    padding: 12px 30px;
+                    text-transform: capitalize;
+                    border-bottom: 0;
+                    color: $text;
+
+                    &:hover,
+                    &:focus {
+                        color: $primary;
+                    }
+                }
+            }
+
+            &.current-page-item {
+                >a {
+                    color: $primary;
+                }
+            }
+
+            &:hover {
+                >a {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.breakpoint-on .classy-navbar .classy-menu {
+    background-color: $white !important;
+}
+
+.classynav ul li .megamenu .single-mega .title {
+    margin-bottom: 0.75rem;
+}
+
+.classynav ul li.has-down>a::after,
+.classynav ul li.megamenu-item>a::after {
+    color: $heading;
+}
+
+.login-btn-area {
+    .btn {
+        color: $white;
+
+        &:hover,
+        &:focus {
+            color: $white;
+        }
+    }
+}
+
+.classynav ul li.megamenu-item>a:hover::after {
+    transform: rotate(180deg);
+}
+
+.breakpoint-off .classynav ul li .dropdown {
+    border-radius: 6px;
+    width: 200px;
+}
+
+.breakpoint-on .classynav ul li ul li a {
+    padding: 0 25px;
+}
+
+.breakpoint-on .classynav ul li.has-down.active>.dd-trigger,
+.breakpoint-on .classynav ul li.megamenu-item.active>.dd-trigger {
+    background-color: $primary;
+}
+
+.breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-3,
+.breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-4,
+.breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-5 {
+    background-color: $white;
+}
+
+.breakpoint-on .dd-trigger {
+    top: 4px;
+    right: 16px;
+}
+
+.classy-navbar-toggler {
+    line-height: 1;
+}
+
+.classy-navbar-toggler .navbarToggler span {
+    background-color: $text;
+    width: 24px;
+}
+
+.breakpoint-on .classy-navbar .classy-menu {
+    left: -370px;
+    background-color: $gray;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
+
+.breakpoint-on .classynav>ul>li>a {
+    background-color: transparent;
+    border-bottom: 0;
+}
+
+.header-sticky {
+    position: fixed;
+    right: 0;
+    box-shadow: 0 1rem 3rem rgba(47, 91, 234, 0.175);
+    z-index: 9999 !important;
+    background-color: $white;
+
+    .classy-navbar {
+        height: 80px;
+
+        @media #{$breakpoint-md} {
+            height: 70px;
+        }
+
+        @media #{$breakpoint-sm} {
+            height: 60px;
+        }
+
+        @media #{$breakpoint-xs} {
+            height: 60px;
+        }
+    }
+}

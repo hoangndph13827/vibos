@@ -1,0 +1,68 @@
+/* Team CSS */
+
+.single-team-member {
+    position: relative;
+    z-index: 1;
+    border-radius: 1rem;
+
+    .advisor-thumb {
+        position: relative;
+        z-index: 1;
+        border-radius: 1rem 1rem 0 0;
+        margin: 0 auto;
+        padding: 2rem 2rem 0 2rem;
+        overflow: hidden;
+        background-color: $primary;
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 10;
+            top: 1rem;
+            right: 1rem;
+            background-image: url("img/core-img/dot-gray.png");
+            width: 4rem;
+            height: 4rem;
+            opacity: 0.3;
+        }
+    }
+
+    .social-info {
+        a {
+            font-size: 14px;
+            color: $heading;
+            margin: 0.5rem;
+            transition-duration: 500ms;
+
+            &:hover,
+            &:focus {
+                color: $primary;
+            }
+        }
+    }
+
+    .member-info {
+        position: relative;
+        z-index: 1;
+        padding: 30px;
+        border-radius: 0 0 1rem 1rem;
+        text-align: center;
+
+        h6 {
+            transition-duration: 500ms;
+
+            @media #{$breakpoint-md} {
+                font-size: 14px;
+            }
+        }
+
+        p {
+            transition-duration: 500ms;
+            font-size: 14px;
+
+            @media #{$breakpoint-md} {
+                font-size: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+// Message Now Area
+.message-now-area.bg-gray.wow.fadeInUp(data-wow-delay="500ms")
+    .container
+        .row
+            .col-12
+                .apland-contact-form
+                    // Section Title
+                    .message-title
+                        .section-heading
+                            h6.alert.alert-success Contact with us
+                            h3 We'd love to hear from you
+                            p Apland is a completely creative, lightweight, clean app landing page.
+                            .line.ms-0
+
+                    // Contact Form
+                    .contact-from
+                        form#main-contact-form(action="php/mail.php", method="post")
+                            .contact-input-area
+                                #success-fail-info
+                                .row
+                                    .col-lg-6
+                                        .form-group.mb-30
+                                            input.form-control#name(type="text", name="name", placeholder="Your Name", required)
+                                            
+                                    .col-lg-6
+                                        .form-group.mb-30
+                                            input.form-control#email(type="email", name="email", placeholder="Your Email", required)
+                                            
+                                    .col-lg-6
+                                        .form-group.mb-30
+                                            input.form-control#subject(type="text", name="subject", placeholder="Your Topic", required)
+                                            
+                                    .col-lg-6
+                                        .form-group.mb-30
+                                            input.form-control#number(type="text", name="number", placeholder="Your Phone", required)
+
+                                    .col-12
+                                        .form-group.mb-30
+                                            textarea.form-control#message(name="message", cols="30", rows="10", placeholder="Your Message", required)
+
+                                    .col-sm-6
+                                        .form-check.mr-sm-2.mb-3.mb-sm-0
+                                            input.form-check-input(type="checkbox", value="", id="acceptTerms", checked)
+                                            label.form-check-label(for="acceptTerms") Accept terms and conditions
+                                    
+                                    .col-sm-6.text-end
+                                        button.btn.btn-primary(type="submit")
+                                            | Send Now

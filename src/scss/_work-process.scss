@@ -1,0 +1,32 @@
+/* :: Work Process CSS */
+.single-work-step {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    border-radius: 1rem;
+    transition-duration: 500ms;
+
+    .step-number {
+        position: relative;
+        z-index: 1;
+        width: 80px;
+        font-size: 6rem;
+        font-weight: 700;
+        background-position: center center;
+        overflow: hidden;
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        line-height: 1;
+        margin: 0 auto 2rem;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    &:hover,
+    &.active {
+        background-color: $gray;
+    }
+}

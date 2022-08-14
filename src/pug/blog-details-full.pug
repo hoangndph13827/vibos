@@ -1,0 +1,116 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-white.pug
+
+        include inc/dark.pug
+
+        // Breadcrumb Area
+        .breadcrumb-area.bg-img.bg-black-overlay.section-padding-130(style="background-image: url(img/bg-img/testimonials.jpg);")
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-9.col-xl-6
+                        .breadcrumb-content.text-center
+                            h2 Blog Details
+                            p For 5 years we have been developing for providing better services.
+                            // Breadcrumb
+                            nav.mt-4(aria-label="breadcrumb")
+                                ol.breadcrumb.justify-content-center
+                                    li.breadcrumb-item
+                                        a(href="#") Home
+                                    li.breadcrumb-item.active(aria-current="page") Blog
+
+        // Blog Area
+        .apland-blog-area.section-padding-130
+            .container
+                .row.justify-content-center.gy-5
+                    .col-12.col-sm-10.col-md-9.col-lg-8
+                        // Blog Post Area
+                        .single-blog-post
+                            span.post-date.wow.fadeInUp Jun 22, 2021
+                            .post-title.mb-3.wow.fadeInUp For 5 years we have been developing for providing better services.
+                            .post-meta.mb-5.wow.fadeInUp
+                                a.post-author(href="#") By Admin
+                                a.post-tutorial(href="#") Tutorials
+
+                            img.post-thumbnail.wow.fadeInUp(src="img/blog-img/1.jpg", alt="")
+
+                            p.wow.fadeInUp Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.
+                            p.wow.fadeInUp Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?
+
+                            p.wow.fadeInUp Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.
+
+                            h4.my-3.wow.fadeInUp A proven way to boost your site performance.
+
+                            p.wow.fadeInUp Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.
+                            p.wow.fadeInUp Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.
+
+                    .col-12.col-sm-10.col-md-9.col-lg-8
+                        // Comments Area
+                        .comment-area
+                            h4.mb-4 03 Comments
+
+                            ol
+                                // Single Comment Area
+                                li.single-comment-area.wow.fadeInUp
+                                    .comment-content.d-flex
+                                        .comment-author
+                                            img(src="img/advisor-img/testimonial-1.jpg", alt="author")
+                                        .comment-meta
+                                            a.post-date(href="#") 27 Aug 2021
+                                            h6 Nazrul Islam
+                                            p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi
+                                            a.like.me-2(href="#") Like
+                                            a.reply(href="#") Reply
+
+                                    ol.children
+                                        li.single-comment-area
+                                            .comment-content.d-flex
+                                                .comment-author
+                                                    img(src="img/advisor-img/testimonial-2.jpg", alt="author")
+                                                .comment-meta
+                                                    a.post-date(href="#") Lim Sarah
+                                                    h6 Nazrul Islam
+                                                    p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi
+                                                    a.like.me-2(href="#") Like
+                                                    a.reply(href="#") Reply
+
+                                // Single Comment Area
+                                li.single-comment-area.wow.fadeInUp
+                                    .comment-content.d-flex
+                                        .comment-author
+                                            img(src="img/advisor-img/testimonial-1.jpg", alt="author")
+                                        .comment-meta
+                                            a.post-date(href="#") 27 Aug 2021
+                                            h6 Riyadh Khan
+                                            p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi
+                                            a.like.me-2(href="#") Like
+                                            a.reply(href="#") Reply
+
+                    .col-12.col-sm-10.col-md-9.col-lg-8
+                        // Leave A Reply
+                        .contact-area.wow.fadeInUp
+                            h4.mb-4 Leave A Comment
+
+                            // Form
+                            form.contact-from(action="#", method="post")
+                                .row
+                                    .col-12.col-lg-6
+                                        input.form-control.mb-30(type="text", name="message-name", placeholder="Your Name")
+                                    .col-12.col-lg-6
+                                        input.form-control.mb-30(type="email", name="message-email", placeholder="Email")
+                                    .col-12
+                                        textarea.form-control.mb-30(name="message", cols="30", rows="10", placeholder="Type your comments...")
+                                    .col-12
+                                        button.btn.btn-primary(type="submit") Post Comment
+
+        include inc/cta.pug
+
+        include inc/footer.pug
+
+        include inc/plugins.pug

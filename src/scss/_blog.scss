@@ -1,0 +1,446 @@
+/* Blog CSS */
+
+.single-post-area {
+    position: relative;
+    z-index: 1;
+    background-color: $white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        border-radius: 0.5rem;
+        transition-duration: 1000ms;
+    }
+
+    .post-content {
+        transition-duration: 1000ms;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+        background-color: rgba(7, 10, 87, 0.7);
+        top: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+
+        @media #{$breakpoint-xs} {
+            padding: 1rem !important;
+        }
+
+        .post-meta {
+            a {
+                color: $white;
+                line-height: 1;
+                font-size: 13px;
+
+                &:hover,
+                &:focus {
+                    color: $warning;
+                }
+            }
+
+            span {
+                font-size: 12px;
+                color: $white;
+                line-height: 1;
+            }
+        }
+
+        h3 {
+            color: $white;
+            margin-bottom: 0;
+            line-height: 1.4;
+            letter-spacing: -1px;
+            font-weight: 600;
+
+            @media #{$breakpoint-lg} {
+                font-size: 1.25rem;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 1rem;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: .75rem;
+            }
+
+            @media #{$breakpoint-xs-landscape} {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    &:hover,
+    &:focus {
+        img {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.single-blog-post {
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid $border;
+    padding-bottom: 3rem;
+
+    .post-thumbnail {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 2rem;
+        width: 100%;
+
+        a {
+            display: block;
+        }
+    }
+
+    .post-date {
+        font-size: 14px;
+        text-transform: capitalize;        
+        color: $primary;
+        display: block;
+        margin-bottom: .5rem;
+        font-weight: 600;
+    }
+
+    .post-title {
+        transition-duration: 500ms;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        display: block;
+        margin-bottom: 2rem;
+        color: $heading;
+        font-weight: 600;
+        letter-spacing: -1px;
+
+        @media #{$breakpoint-lg} {
+            font-size: 36px;
+        }
+
+        @media #{$breakpoint-md} {
+            font-size: 30px;
+        }
+
+        @media #{$breakpoint-sm} {
+            font-size: 30px;
+        }
+
+        @media #{$breakpoint-xs} {
+            font-size: 24px;
+        }
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+
+    .post-meta {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 15px;
+
+        a {
+            position: relative;
+            z-index: 1;
+            font-size: 14px;
+            color: $text;
+            display: inline-block;
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+
+                &::before {
+                    content: '|';
+                    position: absolute;
+                    top: 0;
+                    left: -20px;
+                    z-index: 1;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                color: $primary;
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+        line-height: 2;
+
+        @media #{$breakpoint-xs} {
+            font-size: 14px;
+        }
+    }
+}
+
+.comment-area {
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid $border;
+    padding-bottom: 20px;
+
+    h2 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        display: block;
+
+        @media #{$breakpoint-xs} {
+            font-size: 24px;
+        }
+    }
+
+    .comment-content {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 30px;
+
+        .comment-author {
+            flex: 0 0 48px;
+            width: 48px;
+            max-width: 48px;
+            margin-right: 20px;
+            border-radius: 50%;
+            border: 1px solid $border;
+            height: 48px;
+
+            @media #{$breakpoint-xs} {
+                margin-right: 10px;
+            }
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .comment-meta {
+            .post-date {
+                color: $text;
+                font-size: 12px;
+                text-transform: uppercase;
+                display: block;
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+
+            h5 {
+                margin-bottom: 5px;
+
+                @media #{$breakpoint-xs} {
+                    font-size: 16px;
+                }
+            }
+
+            p {
+                color: $heading;
+                font-size: 14px;
+            }
+
+            a.like,
+            a.reply {
+                display: inline-block;
+                padding: 5px 15px;
+                font-size: 12px;
+                font-weight: 600;
+                border: 1px solid $border;
+                text-transform: uppercase;
+                border-radius: 60px;
+                color: $heading;
+
+                &:focus,
+                &:hover {
+                    border-color: $primary;
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .children {
+        margin-left: 50px;
+
+        @media #{$breakpoint-xs} {
+            margin-left: 20px;
+        }
+
+        .single-comment-area {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.apland-blog-pagination {
+    position: relative;
+    z-index: 1;
+
+    .page-link {
+        padding: 0.375rem .875rem;
+        color: $heading;
+        border: 1px solid transparent;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: .25rem;
+
+        @media #{$breakpoint-xs} {
+            padding: 0.3rem 0.6rem;
+            font-size: 14px;
+        }
+
+        &:hover,
+        &:focus {
+            z-index: 2;
+            color: $primary;
+            background-color: $gray;
+            border-color: transparent;
+            box-shadow: none;
+        }
+    }
+
+    .page-item {
+        &.active {
+            .page-link {
+                color: $primary;
+                background-color: $gray;
+                border-color: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.single-widget-area {
+    position: relative;
+    z-index: 1;
+
+    .widget-form {
+        position: relative;
+        z-index: 1;
+
+        input {
+            width: 100%;
+            height: 50px;
+            border: 1px solid $border;
+            border-radius: 0;
+            font-size: 13px;
+            padding: 0 20px;
+            border-radius: 6px;
+
+            &:focus {
+                border-color: $primary;
+                box-shadow: none;
+            }
+        }
+
+        button {
+            position: absolute;
+            transition-duration: 500ms;
+            width: 80px;
+            height: 50px;
+            background-color: $primary;
+            color: $white;
+            border: none;
+            top: 0;
+            right: 0;
+            z-index: 10;
+            cursor: pointer;
+            border-radius: 0 6px 6px 0;
+
+            &:hover,
+            &:focus {
+                background-color: $heading;
+                color: $white;
+            }
+        }
+    }
+}
+
+.catagories-list {
+    position: relative;
+    z-index: 1;
+
+    li {
+        a {
+            font-size: 1rem;
+            display: block;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: $heading;
+
+            i {
+                padding-right: 10px;
+            }
+
+            &:hover,
+            &:focus {
+                color: $primary;
+            }
+        }
+
+        &:last-child {
+            a {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.popular-tags {
+    position: relative;
+    z-index: 1;
+    margin-left: -4px;
+
+    li {
+        display: inline-block;
+
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+.single-recent-post {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .post-thumb {
+        flex: 0 0 80px;
+        max-width: 80px;
+        width: 80px;
+        margin-right: 20px;
+    }
+
+    .post-content {
+        .post-title {
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 5px;
+            color: $heading;
+
+            &:hover,
+            &:focus {
+                color: $primary;
+            }
+        }
+
+        .post-date {
+            font-size: 12px;
+            text-transform: capitalize;
+            color: $text;
+        }
+    }
+}
